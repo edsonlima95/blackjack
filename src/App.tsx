@@ -23,10 +23,10 @@ function App() {
     <MantineProvider theme={theme}>
       <div className="d-flex w-100">
         {state && (
-          <div className="bg-0A1428 d-md-flex d-none">
+          <div className="bg-0A1428 d-md-flex d-none  position-relative">
             <div className="navbar-left d-flex flex-column bg-131220 sidebar p-0">
               <Sidebar></Sidebar>
-              <div className="flex-grow-1 bg-12111E w-100 h-auto position-relative">
+              <div className="flex-grow-1 bg-12111E w-100 h-auto overflow-y-scroll">
                 <Navbar />
                 <div className="position-absolute bottom-0 sms w-100">
                   <InputGroup className="px-3">

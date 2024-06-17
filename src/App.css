@@ -28,7 +28,7 @@ body {
 
 .navbar-left .flex-grow-1 {
   border-right: 5px solid #0a1428;
-  padding-bottom: 100px;
+  margin-bottom: 120px;
 }
 
 .bd-none {

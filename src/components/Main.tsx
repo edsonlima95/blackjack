@@ -65,7 +65,7 @@ function Topbar({
         <div>
           <img className="bd-rounded-50" width={"70px"} src={Avatar} alt="" />
           <FaSortDown />
-          <FaRegBell className="mx-3" />
+          <FaRegBell className="form-control-color mx-3" />
         </div>
       </div>
     </div>
