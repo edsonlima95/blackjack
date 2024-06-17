@@ -1,5 +1,4 @@
 import { FaArrowLeft, FaArrowRight, FaCircle, FaScroll } from "react-icons/fa";
-import Roll from "../assets/roll.svg";
 import CarouselInfo from "../utilities/carousel";
 import { Carousel } from "@mantine/carousel";
 import { Button } from "react-bootstrap";

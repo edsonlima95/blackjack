@@ -7,7 +7,6 @@ import {
   FaWallet,
   FaRegBell,
   FaChevronRight,
-  FaChevronCircleRight,
 } from "react-icons/fa";
 import Avatar from "../assets/avatar.svg";
 import { Dispatch, SetStateAction } from "react";
