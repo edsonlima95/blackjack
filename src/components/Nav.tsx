@@ -1,4 +1,4 @@
-import { FaCircle } from "react-icons/fa";
+import { FaArrowLeft, FaArrowRight, FaCircle, FaScroll } from "react-icons/fa";
 import Roll from "../assets/roll.svg";
 import CarouselInfo from "../utilities/carousel";
 import { Carousel } from "@mantine/carousel";
@@ -8,11 +8,11 @@ function Navbar() {
   return (
     <div>
       <div className="d-flex justify-content-between p-3">
-        <div>
-          <FaCircle />
-          239
+        <div className="d-flex align-items-center text-white">
+          <FaCircle className="active" />
+          &nbsp;239
         </div>
-        <img src={Roll} alt="" />
+        <FaScroll className="c-grey" />
       </div>
 
       {CarouselInfo.map(
@@ -31,12 +31,16 @@ function Navbar() {
           idx: number
         ) => {
           return (
-            <div className="m-2 p-2 bg-white bd-rounded-12" key={idx}>
-              <div className="d-flex justify-content-between">
+            <div className="m-2 p-2 bg-191827 bd-rounded-12" key={idx}>
+              <div className="d-flex justify-content-between c-726b8d">
                 <div>{ele.entries}</div>
                 <div>{ele.feg}</div>
               </div>
-              <Carousel height={150}>
+              <Carousel
+                nextControlIcon={<FaArrowRight />}
+                previousControlIcon={<FaArrowLeft />}
+                height={150}
+              >
                 {ele.info.map(
                   (
                     e: {
@@ -58,15 +62,21 @@ function Navbar() {
                                   src={e.imgSrc}
                                   alt=""
                                   srcSet=""
+                                  width={80}
                                 />
                                 <div className="">
-                                  <p className="my-1 mx-2">{e.name}</p>
-                                  <p className="my-1 mx-2">{e.value}</p>
-                                  <p className="my-1 mx-2">{e.time}</p>
+                                  <p className="my-1 mx-2 text-white">
+                                    {e.name}
+                                  </p>
+                                  <p className="my-1 mx-2 active">{e.value}</p>
+                                  <p className="my-1 mx-2 c-726b8d">{e.time}</p>
                                 </div>
                               </div>
                             </div>
-                            <Button className="col-10 d-block block-center">
+                            <Button
+                              variant="red"
+                              className="col-10 d-block block-center"
+                            >
                               Join
                             </Button>
                           </>

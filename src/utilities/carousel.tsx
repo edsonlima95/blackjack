@@ -1,4 +1,4 @@
-import Avatar from "../assets/avatar.jfif";
+import Avatar from "../assets/angcock.svg";
 
 const CarouselInfo = [
   {
