@@ -36,7 +36,7 @@ function App() {
                       <Form.Control
                         placeholder="Say something ..."
                         aria-label="Recipient's username"
-                        className=" bd-none c-8d8d8d bg-transparent"
+                        className=" bd-none c-bfbfbf bg-transparent"
                         aria-describedby="basic-addon2"
                       />
                       <Button
