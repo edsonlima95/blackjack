@@ -56,13 +56,15 @@ function Navbar() {
                           <>
                             <div className="col-8 block-center">
                               <div className="d-flex justify-content-center py-2 align-items-center">
-                                <img
-                                  className=""
-                                  src={e.imgSrc}
-                                  alt=""
-                                  srcSet=""
-                                  width={80}
-                                />
+                                <div className="img-blur w-100 d-flex justify-content-center">
+                                  <img
+                                    className=""
+                                    src={e.imgSrc}
+                                    alt=""
+                                    srcSet=""
+                                    width={80}
+                                  />
+                                </div>
                                 <div className="">
                                   <p className="my-1 mx-2 text-white">
                                     {e.name}

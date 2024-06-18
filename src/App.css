@@ -31,6 +31,11 @@ body {
   margin-bottom: 120px;
 }
 
+.main-board {
+  background-image: url("./assets/image1507.png");
+  background-size: cover;
+}
+
 .bd-none {
   border: transparent !important;
 }
@@ -65,6 +70,9 @@ body {
 .bg-191827 {
   background-color: #191827;
 }
+.bg-transparent {
+  background-color: transparent;
+}
 
 .sidebar {
   height: 100vh;
@@ -80,8 +88,12 @@ body {
   justify-content: center;
 }
 
-button {
-  border-color: transparent !important;
+.box-blur {
+  box-shadow: 0 0 100px 0px #ff4545b3;
+}
+
+.text-blur {
+  text-shadow: 0 0 50px #ff4545b3;
 }
 
 .nav-link.active,
@@ -93,6 +105,10 @@ button {
   color: rgba(57, 55, 82, 0.81);
 }
 
+.c-8d8d8d {
+  color: #8d8d8d;
+}
+
 .c-413E61 {
   color: #413e61;
 }
@@ -101,8 +117,20 @@ button {
   color: #46435f;
 }
 
+.c-333a46 {
+  color: #333a46;
+}
+
 .c-726b8d {
   color: #726b8d;
+}
+
+.f-decoraction-none {
+  text-decoration: none;
+}
+
+.f-32 {
+  font-size: 32px;
 }
 
 .btn-red:hover {
@@ -111,6 +139,17 @@ button {
 }
 .progress-bar {
   background-color: #ff4545 !important;
+}
+
+.img-blur {
+  background: radial-gradient(#2f7bff54, transparent 75%);
+}
+
+.round-border {
+  border-top: 5px solid red;
+  padding: 0;
+  border-top-left-radius: 5px;
+  border-top-right-radius: 5px;
 }
 
 .f-poppins {
@@ -128,22 +167,29 @@ button {
 .progress,
 .progress * {
   border-radius: 15px;
-  color: #ff4545 !important;
   background-color: #a1a1a152;
+}
+
+.progress > .progress-bar {
+  position: relative !important;
+  overflow: visible;
+}
+
+.indicator {
+  right: 0;
+  bottom: 100%;
 }
 
 #top-progress {
   border: 2px solid #ff4545;
+  box-shadow: 0px 0px 10px white;
+
   width: 130px !important;
 }
 
-.heat h2 {
-  text-shadow: 0 0 10px #ff4545b8;
-}
-
-.heat h2:hover {
+.heat div:hover > h2 {
   cursor: hover;
-  text-shadow: 0 0 20px #ff4545b8;
+  text-shadow: 0 0 20px #ff4545;
   transition: ease-in all 300ms;
 }
 

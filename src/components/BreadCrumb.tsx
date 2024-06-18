@@ -1,10 +1,12 @@
-import { Nav, Navbar } from "react-bootstrap";
+import { Button, Nav, Navbar } from "react-bootstrap";
 import {
   FaShieldVirus,
   FaLifeRing,
   FaTrophy,
   FaScroll,
   FaChartBar,
+  FaTwitter,
+  FaDiscord,
 } from "react-icons/fa";
 
 function Navigator() {
@@ -31,6 +33,22 @@ function Navigator() {
           <Nav.Link href="#supp" className="xy-center c-413E61">
             <FaTrophy />
             &nbsp;SUPPORT
+          </Nav.Link>
+          <Nav.Link href="#supp" className="xy-center c-413E61">
+            <Button
+              variant="outline-secondary"
+              className="d-inblock mx-1 xy-center"
+            >
+              <FaTwitter className="my-1" />
+            </Button>
+          </Nav.Link>
+          <Nav.Link href="#supp" className="xy-center c-413E61">
+            <Button
+              variant="outline-secondary"
+              className="d-inblock mx-1 xy-center"
+            >
+              <FaDiscord className="my-1" />
+            </Button>
           </Nav.Link>
         </Nav>
       </Navbar.Collapse>

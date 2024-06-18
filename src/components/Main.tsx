@@ -38,14 +38,16 @@ function Topbar({
           <FaSortDown className="xy-center" />
         </Button>
         <Button variant="red" className="d-inblock mx-1 xy-center">
-          <FaCartPlus />
+          <div className="bd-rounded-50 bg-white xy-center py-1 mx-1">
+            <FaCartPlus className="active mx-1" />
+          </div>
           <p className="f-poppins m-0">Market Place</p>
         </Button>
       </div>
       <div className="d-none d-md-flex align-items-center">
         <ButtonGroup aria-label="Basic example">
           <Button variant="secondary" className="xy-center f-poppins">
-            R$ 0.00
+            <a className="active f-decoraction-none">R$</a>&nbsp;0.00
           </Button>
           <Button variant="secondary" className="xy-center f-poppins">
             <FaWallet></FaWallet>&nbsp;Wallet
@@ -63,9 +65,14 @@ function Topbar({
           />
         </div>
         <div>
-          <img className="bd-rounded-50" width={"70px"} src={Avatar} alt="" />
-          <FaSortDown />
-          <FaRegBell className="form-control-color mx-3" />
+          <img
+            className="bd-rounded-50 mx-2"
+            width={"70px"}
+            src={Avatar}
+            alt=""
+          />
+          <FaSortDown className="c-333a46 mx-2" />
+          <FaRegBell className="form-control-color mx-2 c-333a46" />
         </div>
       </div>
     </div>
